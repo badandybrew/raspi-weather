@@ -4,7 +4,7 @@ var config = {
      * Note: it's only needed for the graph intervals, doesn't set the logging interval.
      * You have to edit your crontab for that.
      */
-    measurementInterval: 10,
+    measurementInterval: 30,
 
     /**
      * fahrenheit or celsius
@@ -20,8 +20,8 @@ var config = {
      * You can disable geolocation and provide coordinates if you want.
      */
     useGeoLocation: true,
-    latitude: 39.00,
-    longitude: -95.13,
+    latitude: ,
+    longitude: 19.09,
 
     /**
      * Color zones for the graph lines.
@@ -43,7 +43,7 @@ var config = {
      * Forecast.io API key.
      * Please don't abuse this. Be a good guy and request your own at http://developer.forecast.io
      */
-    APIKey: '18c122c22aa6be98d6b743e2512fa0ee',
+    APIKey: '262d0436a1b2d47e7593f0bb41491b64',
     /* Forecast.io language for data retrieval */
     lang: 'en',
 
@@ -77,7 +77,7 @@ var globalHighchartsOptions = {
     },
     yAxis: [{
         title: {
-            text: 'Temperature (°F)',
+            text: 'Temperature (°C)',
             margin: 5,
             style: {
                 fontWeight: 'bold'
@@ -118,7 +118,7 @@ var globalHighchartsOptions = {
                 enabled: false
             },
             tooltip: {
-                valueSuffix: '°F'
+                valueSuffix: '°C'
             },
             color: '#F18324',
             zones: [{
